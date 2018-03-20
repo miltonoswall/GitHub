@@ -1,0 +1,264 @@
+
+@font-face {
+font-family: Dancing-Script;
+font-style: normal;
+src: url("../fuentes/DancingScript-Regular.otf"); 
+}
+
+*{
+font-family: Dancing-Script;
+}
+
+body{
+	background: #02010a;
+	width: 900px;
+	display: block;
+	margin: auto;
+}
+
+header {
+	width: 97%;
+	margin-top: 1vw;
+	padding: 1vw;
+	border-radius: 1vh;
+	background-color: #5b7989;
+}
+
+header h1 {
+	padding-left: 5%;
+	padding-top: 2%;
+	font-family: Dancing-Script;
+	font-size: 1.5em;
+	text-align: left;
+	height: 50px;
+	color:white;
+	text-shadow: 2px #02010a;
+}
+
+header nav{
+	float: right;
+	margin: auto;
+	padding-right: 55px;
+}
+
+header nav ul {
+		margin: -60px;
+		list-style: none;
+		padding-right: 55px;
+		
+	}
+nav ul li {
+			display: inline-block;
+			line-height: 30px;
+		
+		}
+nav ul li a {
+			display: block;
+			padding: 10px;
+			color:white;
+			text-decoration: none;
+			}
+			
+nav ul li a:hover {
+					background: #0b76a6;
+			}
+
+
+.imagen{
+	background: #82c3a6;
+	width: 900px;
+	height: 550px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#imagen img {
+	width: 85%;
+	height: 80%;
+
+	display: block;
+	margin: auto;
+
+}
+
+div img{
+	-moz-box-shadow: rgb(0, 0, 0) 2px 2px;
+	-webkit-box-shadow:rgb(0, 0, 0) 2px 2px;
+	box-shadow: rgb(0, 0, 0) 2px 2px;
+}
+
+footer img{
+	box-shadow: none
+}
+
+.contenido{
+	display: flex;
+	background: #d5c75f;
+	width: 100%;
+
+
+}
+
+.contenido figure img{
+	width: 400px;
+	float: left;
+	margin: auto;
+	
+}
+
+
+#retrato img{
+	transition-property: transform translate(20px, -5px);
+	transition-property: box-shadow: 2px #02010a;
+	transition-duration: 2s;
+	width: 100%;
+	
+}
+
+#retrato img:hover{
+	transform: translate(20px, -5px);
+	
+}
+
+
+#paisaje img{
+	transition-property: transform rotate(10deg);
+	transition-property: box-shadow: 2px #02010a;
+	transition-duration: 2s;
+	width: 100%
+}
+
+#paisaje img:hover{
+	transform: rotate(10deg);
+	
+}
+
+div h2{
+	text-align: center;
+}
+
+@media  screen and (min-width: 900px) {
+	
+	.imagen figure{
+		width: 100%
+	}
+	.paisaje { 
+		
+		width: 50%;
+			}
+	.retrato {
+		
+		width: 50%;
+			}
+
+}
+
+@media  screen and (max-width: 900px) {
+	header {
+		width: 70%;
+		height: 130px;
+	}
+	header h1{
+		width: 100%;
+		height: auto;
+		order: 1;
+	}
+	header nav{
+		width: 70%;
+		height: auto;
+		order:2;
+	}
+	.imagen{
+		width: 90%;
+		height: 90%;
+	}
+	.imagen figure {
+		width: 50%;
+	}
+	.contenido .paisaje { 
+		
+		width: 50%;
+		order:1;
+	}
+	.contenido .retrato {
+		
+		width: 50%;
+		order:2;
+	}
+	footer{
+		width: 60%;
+	}
+	#contactos{
+		width: 50%;
+		order:1;
+	}
+	#terminos{
+		width: 50%;
+		order:2;
+	}
+	#sociales{
+		width: 50%;
+		order: 3;
+	}
+	
+	#derechos{
+		width: 50%;
+		order:4;
+	}
+}
+
+
+@media  screen and (max-width: 900px) {
+	.contenido{
+		display: flex;
+    	flex-direction:column;
+	}
+	header{
+		display: flex;
+    	flex-direction:column;
+	}
+	footer{
+		display: flex;
+    	flex-direction:column;
+	}
+}
+
+
+
+footer {
+	width: 97%;
+	float: left;
+	clear: both;
+	border-radius: 0 0 10px 10px;
+	padding: 1vw;
+	background: #C6d5c5;
+}
+
+footer section {
+	width: 180px;
+	float: left;
+	padding: 1vw;
+}
+
+footer #contactos {
+	font-family: Dancing-Script;
+
+}
+
+footer #terminos{
+	font-family: Dancing-Script;
+}
+
+footer #contactos{
+	font-family: Dancing-Script;
+}
+
+footer #derechos{
+	font-family: Dancing-Script;
+}
+footer #sociales >div a{
+
+	text:inline-block;
+}
+}

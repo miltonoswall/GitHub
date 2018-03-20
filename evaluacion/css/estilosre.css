@@ -1,0 +1,235 @@
+@font-face {
+font-family: Dancing-Script;
+font-style: normal;
+src: url("../fuentes/DancingScript-Regular.otf"); 
+}
+
+*{
+font-family: Dancing-Script;
+}
+
+body{
+	background: #02010a;
+	width: 900px;
+	display: block;
+	margin: auto;
+}
+
+header {
+	width: 100%;
+	margin-top: 1vw;
+	padding: 1vw;
+	border-radius: 1vh;
+	background-color: #5b7989;
+}
+
+
+header h1 {
+	padding-left: 5%;
+	padding-top: 2%;
+	font-family: Dancing-Script;
+	font-size: 1.5em;
+	text-align: left;
+	height: 50px;
+	color:white;
+	text-shadow: 2px #02010a;
+}
+
+header nav{
+	float: right;
+	margin: auto;
+	padding-right: 55px;
+}
+
+nav ul {
+		margin: -60px;
+		list-style: none;
+		padding-right: 55px;
+		
+	}
+nav ul li {
+			display: inline-block;
+			line-height: 30px;
+		
+		}
+nav ul li a {
+			display: block;
+			padding: 10px;
+			color:white;
+			text-decoration: none;
+			}
+			
+nav ul li a:hover {
+					background: #0b76a6;
+			}
+
+div img{
+	-moz-box-shadow: rgb(0, 0, 0) 2px 2px;
+	-webkit-box-shadow:rgb(0, 0, 0) 2px 2px;
+	box-shadow: rgb(0, 0, 0) 2px 2px;
+}
+
+footer img{
+	box-shadow: none
+}
+.contenedor {
+	width: 100%;
+	float: left;
+	clear: both;
+	border-radius: 0 0 10px 10px;
+	padding: 1vw;
+	background:  #82c3a6;
+
+}
+
+.contenedor figure img{
+	width: 245px;
+	float: left;
+	display: block;
+	margin: 10px;
+}
+
+.imagen1 {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+	width: 100%;
+}
+
+.imagen2{
+	-webkit-filter:grayscale(100%);
+	filter: grayscale(100%);
+	width: 100%;
+}
+
+.imagen3{
+	-webkit-filter:sepia(90%);
+	filter: sepia(90%);
+	width: 100%;
+}
+
+.imagen4{
+	-webkit-filter:grayscale(100%);
+	filter: grayscale(100%);
+	width: 100%;
+}
+.imagen5{
+	width: 100%;
+}
+.imagen6{
+	-webkit-filter:grayscale(100%);
+	filter: grayscale(100%);
+	width: 100%;
+}
+
+@media  screen and (max-width: 900px) {
+	header {
+		width: 70%;
+		height: 130px;
+	}
+	header h1{
+		width: 100%;
+		height: auto;
+		order: 1;
+	}
+	header nav{
+		width: 70%;
+		height: auto;
+		order:2;
+	}
+	.imagen1 { 
+		width: 100%;
+		order:1;
+	}
+	.imagen2 {
+		width: 100%;
+		order:2;
+	}
+	.imagen3 { 
+		width: 100%;
+		order:3;
+	}
+	.imagen4 {
+		width: 100%;
+		order:4;
+	}
+	.imagen5 { 
+		width: 100%;
+		order:5;
+	}
+	.imagen6 {
+		width: 100%;
+		order:6;
+	}
+	footer{
+		width: 60%;
+	}
+	#contactos{
+		width: 50%;
+		order:1;
+	}
+	#terminos{
+		width: 50%;
+		order:2;
+	}
+	#sociales{
+		width: 50%;
+		order: 3;
+	}
+	
+	#derechos{
+		width: 50%;
+		order:4;
+	}
+}
+
+@media  screen and (max-width: 900px) {
+	.contenedor{
+		display: flex;
+    	flex-direction:column;
+	}
+	header{
+		display: flex;
+    	flex-direction:column;
+	}
+	footer{
+		display: flex;
+    	flex-direction:column;
+	}
+}
+
+footer {
+	width: 100%;
+	float: left;
+	clear: both;
+	border-radius: 0 0 10px 10px;
+	padding: 1vw;
+	background: #C6d5c5;
+}
+
+footer section {
+	width: 190px;
+	float: left;
+	padding: 1vw;
+}
+
+footer #contactos {
+	font-family: Dancing-Script;
+
+}
+
+footer #terminos{
+	font-family: Dancing-Script;
+}
+
+footer #contactos{
+	font-family: Dancing-Script;
+}
+
+footer #derechos{
+	font-family: Dancing-Script;
+}
+footer #sociales >div a{
+
+	text:inline-block;
+}
+}
